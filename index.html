@@ -33,8 +33,32 @@
     <div class="menu">
         <img src="./img/img-pequena1.png" alt="copo verde" class="copo-pequeno verde"> <!--duas clases(copo-pequeno e verde)-->
         <img src="./img/img-pequena2.png" alt="copo amarelo" class="copo-pequeno amarelo">
-        <img src="./img/img-pequena3.png" alt="copo rosa" class="copo-pequeno rosa>
+        <img src="./img/img-pequena3.png" alt="copo rosa" class="copo-pequeno rosa">
     </div>
 
 </body>
+
+    <script>
+        let circulo = document.querySelector(".circulo")
+        let copogrande = document.querySelector(".Starbucks")
+        let verde = document.querySelector("verde")
+        let amarelo = document.querySelector("amarelo")
+        let rosa = document.querySelector("rosa")
+
+        verde.addEventListener("click", ()=>{
+            copogrande.src ="./image/img1.png"
+            circulo.style.background ="#01743"
+        })
+
+        amarelo.addEventListener("click", ()=>{
+            copogrande.src =".image/img2.png"
+            circulo.style.background ="#f1fa8c"
+        })
+
+        rosa.addEventListener("click", ()=>{
+            copogrande.src =".image/img3.png"
+            circulo.style.background ="#eb7495"
+        })
+    </script>
+
 </html>
